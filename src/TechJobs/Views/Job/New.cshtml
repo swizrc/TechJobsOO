@@ -11,9 +11,20 @@
         <label asp-for="EmployerID"></label>
         <select asp-for="EmployerID" asp-items="Model.Employers"></select>
     </div>
-
+    <div class="form-group">
+        <label asp-for="location"></label>
+        <select asp-for="location" asp-items="Model.Locations"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="coreCompetency"></label>
+        <select asp-for="coreCompetency" asp-items="Model.CoreCompetencies"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="positionType"></label>
+        <select asp-for="positionType" asp-items="Model.PositionTypes"></select>
+    </div>
     @{ 
-        // TODO #5 - Create <select> dropdowns for other job fields (outside of this @{ } block)
+        // DONEZO-TODO #5 - Create <select> dropdowns for other job fields (outside of this @{ } block)
     }
 
     <input type="submit" value="Add Job" />
