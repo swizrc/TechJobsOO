@@ -15,6 +15,7 @@ namespace TechJobs.ViewModels
 
         // The search value
         [Display(Name = "Keyword:")]
+        [Required(ErrorMessage = "Input a term to search!")]
         public string Value { get; set; } = "";
 
     }
